@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy of pepsi site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header class="head">
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul class="u_head">
+                <li class="u_li">
+                    <a href="#">Home</a>
+                </li>
+                <li class="u_li">
+                    <a href="#">Products</a>
+                </li>
+                <li class="u_li">
+                    <a href="#">What's New</a>
+                </li>
+                <li class="u_li">
+                    <a href="#">Newsletter</a>
+                </li>
+                <li class="u_li">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text_box">
+                <h2>That's What <br><span>I Like</span></h2>
+                <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="img_box">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onpointerenter="img_slider('pepsi001.png');change_bg_color('#0062be')" class="img_bot"></li>
+            <li><img src="pepsi002.png" onpointerenter="img_slider('pepsi002.png');change_bg_color('#e60c2c')" class="img_bot"></li>
+            <li><img src="pepsi003.png" onpointerenter="img_slider('pepsi003.png');change_bg_color('#1e1e1e')" class="img_bot"></li>
+        </ul>
+        <ul class="add">
+            <li><a href="#"><img src="facebook.png" class="img_add"></a></li>
+            <li><a href="#"><img src="twitter.png" class="img_add"></a></li>
+            <li><a href="#"><img src="instagram.png" class="img_add"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function img_slider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function change_bg_color(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
